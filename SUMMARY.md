@@ -1,7 +1,6 @@
 # Summary
 
 * [前言](README.md)
-    * [序言](序言.md)
 * [Python教程](第一章.md)
     * [hello,world](初探python.md)
     * [第一个游戏](第一个游戏.md)
