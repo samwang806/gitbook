@@ -1,4 +1,4 @@
-### lamdba匿名函数
+### lambda匿名函数
 ```py
 def ds(x):
     return 2*x+1
@@ -7,7 +7,7 @@ def ds(x):
 
 我们来看一看lamdba的使用
 
-`g = lamdba x : 2 * x + 1`
+`g = lambda x : 2 * x + 1`
 
 `g(5)`
 
@@ -19,11 +19,11 @@ def add(x,y):
 ```
 这种有多个参数的我们也可以使用lamdba使用
 
-`g = lamdba x,y:x+y`
+`g = lambda x,y:x+y`
 
 `g(5,7)`
 
-### lamdba表达式的作用
+### lambda表达式的作用
 •Python写一些执行脚本时，使用lambda就可以省下定义函数过程，使用lambda就可以使得代码更加精简。
 
 •对于一些比较抽象并且整个程序执行下来只需要调用一两次的函数使用lambda就不需要考虑命名的问题了。
