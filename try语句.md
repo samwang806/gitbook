@@ -2,7 +2,7 @@
 
 先来看看try-except语句
 
-try-except语句语法如下：
+##try-except语句语法：
 
 ```py
 
@@ -49,8 +49,41 @@ try:
 except ValueError as r:
     print('报错了，错误的原因是',r)
 ```
+运行结果：
+```py
+不如来猜一下我现在心里想的数字呗asdf
 
+报错了，错误的原因是 invalid literal for int() with base 10: 'asdf'
 
+```
+这里我们使用了ValueError来接受的用户的报错信息,并且将信息赋值个r将其打印了出来
 
+##设置多个except
 
+```py
+try:
+    a = 1+'a'
+    int(a)
+except TypeError as r:
+    print('错错了，出错信息是,',r)
+except ValueError as r:
+    print('错错了，出错信息是,',r)
+```
+##一个except里处理多个异常
+```py
+try:
+   a = 1+'a'
+   int(a)
+except (TypeError,ValueError) as r:
+   print('错错了，出错信息是,',r)
+```
 
+##捕获所有异常
+```py
+try:
+   a = 1+'a'
+   int(a)
+except:
+   print('错错了')
+```
+如果无法确认是哪一个类型的报错，只是希望代码报错后，能够提示一个可以看得懂的提醒，那就这样做吧，但是并不推荐这样做
