@@ -126,3 +126,24 @@ finally:
 ```py
 无论如何都去执行
 ```
+
+
+##**raise**语句
+
+
+
+除了之前讲到的这些异常外，我们亦可以通过raise语句，自己抛出一个异常
+```py
+raise AttributeError
+
+```
+执行结果：
+```py
+Traceback (most recent call last):
+
+ File "D:/my_script/pyscript/work33.py", line 1, in <module>
+
+ raise AttributeError
+
+AttributeError
+```
