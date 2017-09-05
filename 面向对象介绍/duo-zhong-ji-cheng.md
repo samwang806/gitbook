@@ -2,7 +2,7 @@
 
 ## 1. 多继承 {#1-多继承}
 
-![](/assets/morejicheng.png)
+![](/assets/moremorejichengde.png)
 
 从图中能够看出，所谓多继承，即子类有多个父类，并且具有它们的特征
 
