@@ -1,0 +1,84 @@
+**self**是什么？
+
+我们应该发现了，每一个方法下都会有一个self参数，self到底是什么呢？如果我们之前把类比作图纸，那么由类实例化后的对象才是真正可以住人的房子，我们可以根据图纸建造成千上万的房子，但是每一个房子都有各自的主人，self这里就相当于门牌号，有了self，每个主人才能正确的进入自己的房子
+
+Python的self参数就是这个意思，由同一个类可以生成无数对象，当一个对象的方法被调用的时候，对象会将自身的引用当做第一个参数（self）传递该方法，那么python就会知道是去操作哪个对象的方法了。
+
+我们还是来看看例子
+
+```py
+
+class say():
+
+    def get_name(self,name):
+        self.name = name
+
+    def hello(self):
+        print('你好,'+self.name)
+```
+
+运行：
+
+```py
+tt = say()
+tt2 = say()
+tt.get_name('张三')
+tt2.get_name('李四')
+tt.hello()
+tt2.hello()
+>>>
+你好,张三
+
+你好,李四
+
+```
+
+**公有和私有**
+
+一般面向对象编程语言中，都会有区分公有还是私有的数据类型，但是在python中并没有什么关键字来修饰，默认上对象的属性和方法都是公开的，我们可以直接使用.进行访问
+
+```py
+class demo():
+    name = '伊莱恩'
+a = demo()
+print(a.name)
+
+```
+
+结果
+
+```py
+伊莱恩
+```
+
+那为了实现私有变量的特性，我们在Python中定义私有变量只需要在变量名或者函数名前加上'\_\_'两个下划线，那么这个函数或者变量就会编程私有的了。
+
+```py
+class demo():
+    __name = '伊莱恩'
+
+    def get_name(self):
+        print(self.__name)
+a = demo()
+a.get_name()
+a.__name
+```
+
+运行结果
+
+```py
+伊莱恩
+
+Traceback (most recent call last):
+
+ File "D:/my_script/pyscript/work33.py", line 10, in <module>
+
+ a.__name
+
+AttributeError: 'demo' object has no attribute '__name'
+
+
+```
+
+这我们看到，当我们在变量名前加上了\_\_,此时我们直接使用a.\_\_name，Python会提示我们没有这个属性，所以我们需要访问这个变量时，就需要从内部进行了。所以这里打印出了self.__name
+
