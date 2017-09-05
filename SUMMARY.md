@@ -30,6 +30,7 @@
     * [else语句](raise语句.md)
   * [面向对象介绍](面向对象介绍.md)
     * [类和对象](面向对象介绍/lei-he-dui-xiang.md)
+    * [创建对象](面向对象介绍/chuang-jian-dui-xiang.md)
     * [面向对象编程](面向对象介绍/mian-xiang-dui-xiang-bian-cheng.md)
     * [继承](面向对象介绍/ji-cheng.md)
     * [魔法方法](面向对象介绍/mo-fa-fang-fa.md)
