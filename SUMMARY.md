@@ -33,6 +33,7 @@
     * [创建对象](面向对象介绍/chuang-jian-dui-xiang.md)
     * [面向对象编程](面向对象介绍/mian-xiang-dui-xiang-bian-cheng.md)
     * [单继承](面向对象介绍/ji-cheng.md)
+    * [多重继承](面向对象介绍/duo-zhong-ji-cheng.md)
     * [魔法方法](面向对象介绍/mo-fa-fang-fa.md)
 * [HTTP常见状态码](http常见状态码.md)
 
